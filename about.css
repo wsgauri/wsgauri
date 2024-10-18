@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-item {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar-link:hover {
+    text-decoration: underline;
+}
+
+/* About Us section */
+.about-us {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-content h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.about-content h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.about-content p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
