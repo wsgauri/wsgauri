@@ -1,0 +1,104 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Sky blue background */
+    color: #333; /* Default text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styles */
+.container {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for container */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Heading Styles */
+h1 {
+    text-align: center;
+    color: #0288d1; /* Sky blue color */
+    margin-bottom: 20px;
+}
+
+/* Table Styles */
+.form-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.form-table th, .form-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd; /* Light gray border for table cells */
+}
+
+.form-table tr:nth-child(even) {
+    background-color: #f1f8e9; /* Light greenish background */
+}
+
+.form-table tr:hover {
+    background-color: #b3e5fc; /* Light sky blue on hover */
+    transition: background-color 0.3s ease;
+}
+
+/* Label Styles */
+label {
+    font-weight: bold;
+    color: #0288d1; /* Sky blue color */
+}
+
+/* Input Styles */
+input[type="number"],
+input[type="text"],
+input[type="date"],
+input[type="time"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Button Group Styles */
+.button-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-group button {
+    background-color: #0288d1; /* Sky blue color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-group button:hover {
+    background-color: #0277bd; /* Darker sky blue on hover */
+    transform: scale(1.05);
+}
+
+.button-group button:active {
+    background-color: #01579b; /* Even darker sky blue when clicked */
+    transform: scale(0.98);
+}
+
+/* Textarea Styles */
+textarea {
+    resize: vertical;
+}
