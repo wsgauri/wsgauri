@@ -1,0 +1,98 @@
+/* style/userhome.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.background-image {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-image-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px;
+    z-index: 1;
+}
+
+.navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-item {
+    margin: 0 15px;
+}
+
+.navbar form {
+    display: inline;
+}
+
+.navbar button {
+    background-color: #c0c0c0;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.navbar button:hover {
+    background-color: #8080ff;
+}
+
+.headline {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    color: white;
+    text-align: center;
+    z-index: 1; /* Ensure it's above other content */
+}
+
+.headline h1 {
+    font-size: 3em; /* Adjust size as needed */
+    margin: 0;
+    padding: 0;
+}
+
+.info-section {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    margin-top: 60px; /* Adjust according to navbar height */
+}
+
+.info-content h2 {
+    margin: 0;
+    font-size: 2em;
+}
