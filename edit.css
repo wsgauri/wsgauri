@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Default text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styles */
+.container {
+    width: 80%;
+    max-width: 600px; /* Maximum width for larger screens */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for container */
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Heading Styles */
+h1 {
+    text-align: center;
+    color: #00796b; /* Teal color */
+    margin-bottom: 20px;
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #00796b; /* Teal color */
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="date"],
+.form-group input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Button Group Styles */
+.button-group {
+    text-align: center;
+}
+
+.button-group button {
+    background-color: #00796b; /* Teal color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-group button:hover {
+    background-color: #004d40; /* Darker teal on hover */
+    transform: scale(1.05);
+}
+
+.button-group button:active {
+    background-color: #003d33; /* Even darker teal when clicked */
+    transform: scale(0.98);
+}
