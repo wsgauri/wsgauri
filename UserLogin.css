@@ -1,0 +1,76 @@
+@charset "UTF-8";
+/* style/login.css */
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray background for the whole page */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the login form */
+.login-container {
+    width: 300px;
+    margin: 100px auto; /* Centering the form horizontally and adding top margin */
+    background-color: #fff; /* White background for the form */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Heading for the form */
+.login-container h2 {
+    color: #333; /* Dark gray color for the heading */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style for form labels */
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555; /* Medium gray color for text */
+}
+
+/* Style for form inputs */
+.login-container input[type="email"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Ensures padding and border are included in the total width */
+}
+
+/* Style for the submit button */
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50; /* Green background color */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px;
+    margin-bottom: 10px; /* Space below the button */
+}
+
+/* Hover effect for the button */
+.login-container button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+/* Style for links */
+.login-container a {
+    display: block;
+    text-align: center;
+    color: #007BFF; /* Blue color for links */
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* Hover effect for links */
+.login-container a:hover {
+    text-decoration: underline;
+}
