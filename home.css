@@ -1,0 +1,194 @@
+/* Basic reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for background image container */
+.background-image {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+/* Background image */
+.background-image-slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+/* Navigation arrows */
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
+/* Navbar styling */
+.navbar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+}
+
+.navbar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-item {
+    margin-left: 15px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+/* Information section styling */
+.info-section {
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.info-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.info-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info-content p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Image gallery styling */
+.image-gallery {
+    padding: 20px;
+    text-align: center;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-row img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: transform 0.5s ease;
+}
+
+/* Minimum size for the "Harry" image */
+.image-gallery img[src*="harry2"] {
+    min-width: 300px;
+    min-height: 225px;
+}
+
+/* Hover effect: slide images */
+.image-container:hover img {
+    transform: translateX(10px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        top: 10px;
+        right: 10px;
+        padding: 5px;
+    }
+
+    .navbar-link {
+        font-size: 14px;
+        padding: 3px 8px;
+    }
+
+    .image-row img {
+        width: 300px;
+        height: 225px;
+    }
+    
+    .image-gallery img[src*="harry2"] {
+        min-width: 200px;
+        min-height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-item {
+        margin: 5px 0;
+    }
+
+    .image-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-row img {
+        width: 200px;
+        height: 150px;
+        margin: 10px 0;
+    }
+    
+    .image-gallery img[src*="harry2"] {
+        min-width: 150px;
+        min-height: 100px;
+    }
+}
